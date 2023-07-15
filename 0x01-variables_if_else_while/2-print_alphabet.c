@@ -5,18 +5,18 @@
  *
  * Description: Print the alphabet in lowercase using putchar
  *
- * Return: Always 0 (Seccess)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char letter;
+	char ch = 'a';
 
-	for (letter = 'a'; letter <= 'm'; letter++)
-		putchar(letter);
+	for (ch = 'a'; ch <= 'm'; ch++)
+		putchar(ch);
 
-	for (letter = 'n'; letter <= 'z'; letter++)
-		putchar(letter);
+	for (ch = 'n'; ch <= 'z'; ch++)
+		putchar(ch);
 
 	putchar('\n');
 
