@@ -3,19 +3,20 @@
 /**
  * main - Entry point
  *
- * Description: print all alphabet letters
+ * Description: Print the alphabet in lowercase using putchar
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Seccess)
 */
 
 int main(void)
 {
-	char ch = 'a';
+	char letter;
 
-	while (ch <= 'z')
+	for (letter = 'a'; letter <= 'm'; letter++)
+		putchar(letter);
 
-		putchar(ch);
-		ch++;
+	for (letter = 'n'; letter <= 'z'; letter++)
+		putchar(letter);
 
 	putchar('\n');
 
