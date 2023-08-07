@@ -3,29 +3,32 @@
 #include "main.h"
 
 /**
- * *_strdup - duplicate to new memory location
- * @str: char
+ * *_strdup -  returns a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter.
+ * @str: string
  *
  * Retuen: 0
  */
+
 char *_strdup(char *str)
 {
-	char *bbb;
-	int i, r = 0;
+	char *m;
+	int i = 0, size = 0;
 
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
 
-	bbb = malloc(sizeof(char) * (i + 1));
+	for (; str[size] != '\0'; size++)
 
-	if (bbb == NULL)
+	/*+1 on the size puts the end of string character*/
+	m = malloc(size * sizeof(*str) + 1);
+
+	if (m == 0)
 		return (NULL);
-
-	for (r = 0; str[r]; r++)
-		bbb[r] = str[r];
-
-	return (bbb);
+	else
+	{
+		for (; i < size; i++)
+			m[i] = str[i];
+	}
+	return (m);
 }
