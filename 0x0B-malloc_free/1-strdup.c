@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *_strdup - returns a pointer to a newly allocated space in memory
+ * *_strdup - duplicate to new memory location
  * @str: char
  * Retuen: Always 0
  */
