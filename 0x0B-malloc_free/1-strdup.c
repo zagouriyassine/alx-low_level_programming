@@ -10,7 +10,7 @@
  * Retuen: 0
  */
 
-char *_strdup(char *str)
+char _strdup(char *str)
 {
 	char *bbb;
 	int i = 0, r = 0;
